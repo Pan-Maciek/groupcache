@@ -1,0 +1,19 @@
+[package]
+name = "groupcache-consul"
+version = "0.1.0"
+edition = "2021"
+authors = ["Maciej Kozieja"]
+categories = ["caching", "web-programming", "concurrency", "asynchronous"]
+description = "groupcache consul service discover"
+homepage = "https://github.com/Petroniuss/groupcache"
+keywords = ["distributed", "cache", "shard", "memcached", "gRPC"]
+license = "MIT"
+readme = "../readme.md"
+repository = "https://github.com/Petroniuss/groupcache"
+
+[dependencies]
+groupcache = { path = "../groupcache", version = "0.1.0" }
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11.22", features = ["json"] }
+serde = { version = "1.0.193", features = ["derive"] }
+async-trait = "0.1.74"
